@@ -1,0 +1,127 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5{
+	font-family: 'Open Sans', sans-serif;
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+	background-color: #eaeaea;
+	display: flex;
+}
+.left-column{
+	background-color: #39383a;
+	width: 36.45833%;
+}
+.photo{
+	width: 100%;
+	height: 233px;
+	background-image: url(https://pp.userapi.com/c841634/v841634720/6751e/KoVisIFXEmQ.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+.profile{
+	padding-top: 52px;
+	padding-left: 31px;
+	padding-right: 26px;
+	padding-bottom: 71px;
+}
+.left-column .heading{
+	color: #f3f3f3;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding-bottom: 15px;
+	border-bottom: 2px dashed #5a5a5a;
+}
+.profile-about{
+	color: #ababab;
+	margin-top: 20px;
+	font-size: 13px;
+	line-height: 24.19px;
+}
+.contacts{
+	margin-top: 20px;
+	padding-bottom: 25px;
+	border-bottom: 2px dashed #5a5a5a;
+}
+.phone{
+	margin-top: 50px;
+}
+.contacts h3{
+	font-size: 16px;
+	color: #fff;
+}
+.contacts i{
+	margin-right: 10px;
+}
+.contacts .desc{
+	font-size: 13px;
+	color: #ababab;
+	margin-top: 10px;
+	margin-left: 19px;
+}
+.languages-heading{
+	margin-top: 70px;
+}
+.lang-box{
+	display: flex;
+	margin-top: 40px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.lang-lap{
+	width: 101px;
+	height: 101px;
+	border: 6px solid #5c5c5c;
+	border-radius: 50%;
+	display: flex;
+	text-align: center;
+	margin-top: 40px;
+}
+.lang{
+	margin: auto;
+}
+.lang span{
+	color: #e2e2e2;
+	font-size: 15px;
+	font-weight: bold;
+}
+.lang > span:nth-child(1){
+	color: #8e8e8e;
+	font-size: 11px;
+	text-transform: uppercase;
+	line-height: 20.97px;
+}
+.lines{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.line{
+	width: 91px;
+	height: 2px;
+	background-color: #5c5c5c;
+}
+.line:nth-child(2){
+	margin-left: 20px;
+}
+@media only screen and (max-width: 768px){
+	.container{
+		flex-direction: column;
+		width: 100%;
+	}
+	.left-column{
+		width: 100%;
+	}
+	.photo{
+		height: 300px;
+	}
+}
