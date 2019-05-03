@@ -112,6 +112,9 @@ h1,h2,h3,h4,h5{
 .about-me{
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 30px;
+	padding-right: 40px;
+	padding-left: 40px;
 }
 .logo{
 	width: 100%;
@@ -187,6 +190,7 @@ h1,h2,h3,h4,h5{
 .about-small{
 	display: flex;
 	justify-content: center;
+	border-bottom: 1px solid rgba(168, 168, 168, 0.44);
 }
 .about-inf{
 	font-size: 10px;
@@ -196,12 +200,48 @@ h1,h2,h3,h4,h5{
 	padding-left: 10px;
 	margin-bottom: 30px;
 	flex-wrap: wrap;
+	border-right: 1px solid #777777;
 }
 .about-inf span{
 	color: black;
 	font-weight: bold;
 }
-@media only screen and (max-width: 768px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px){
+	.container{
+		width: 90%;
+	}
+	.about-small{
+		flex-wrap: wrap;
+	}
+	.about-inf{
+		margin-bottom: 10px;
+	}
+	.about-me{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.right-column{
+		padding: 20px;
+	}
+}
+@media only screen and (max-width: 844px){
 	.container{
 		flex-direction: column;
 		width: 100%;
@@ -218,5 +258,15 @@ h1,h2,h3,h4,h5{
 	.about-small{
 		flex-direction: column;
 		text-align: center;
+	}
+	.about-inf{
+		border: none;
+	}
+}
+@media only screen and (max-width: 510px){
+	.lap-box{
+		display: flex;
+		width: 49%;
+		justify-content: space-around;
 	}
 }
