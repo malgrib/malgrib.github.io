@@ -27,7 +27,6 @@ h1,h2,h3,h4,h5{
 	background-image: url(https://pp.userapi.com/c841634/v841634720/6751e/KoVisIFXEmQ.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
-
 }
 .profile{
 	padding-top: 52px;
@@ -35,11 +34,13 @@ h1,h2,h3,h4,h5{
 	padding-right: 26px;
 	padding-bottom: 71px;
 }
-.left-column .heading{
-	color: #f3f3f3;
+.heading{
 	text-transform: uppercase;
 	font-size: 16px;
 	padding-bottom: 15px;
+}
+.profile-heading{
+	color: #f3f3f3;
 	border-bottom: 2px dashed #5a5a5a;
 }
 .profile-about{
@@ -71,6 +72,9 @@ h1,h2,h3,h4,h5{
 }
 .languages-heading{
 	margin-top: 70px;
+	color: #f3f3f3;
+	border-bottom: 2px dashed #5a5a5a;
+	padding-bottom: 25px;
 }
 .lang-box{
 	display: flex;
@@ -108,13 +112,13 @@ h1,h2,h3,h4,h5{
 .wrap{
 	border: 1px solid rgba(168, 168, 168, 0.44);
 	padding-top: 36px;
+	padding-right: 40px;
+	padding-left: 40px;
 }
 .about-me{
 	display: flex;
 	flex-direction: column;
 	padding-bottom: 30px;
-	padding-right: 40px;
-	padding-left: 40px;
 }
 .logo{
 	width: 100%;
@@ -157,10 +161,12 @@ h1,h2,h3,h4,h5{
 	margin-bottom: 20px;
 }
 .left-lines .logo-line:nth-child(2){
-	
+	position: relative;
+	left: -10px;
 }
 .right-lines .logo-line:nth-child(2){
-	
+	position: relative;
+	left: 10px;
 }
 .name{
 	color: #39383a;
@@ -206,15 +212,89 @@ h1,h2,h3,h4,h5{
 	color: black;
 	font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
+.exp-heading{
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(168, 168, 168, 0.44);
+}
+.inf-block{
+	padding-top: 10px;
+}
+.block{
+	padding-top: 30px;
+	display: flex;
+	padding-bottom: 30px;
+	border-bottom: 1px dashed rgba(168, 168, 168, 0.44);
+}
+.dot-block{
+	padding-right: 10px;
+}
+.dot{
+	width: 9px;
+	height: 9px;
+	background-color: #39383a;
+	border-radius: 50%;
+	margin-right: 20px;
+	margin-top: 5px;
+}
+.inf-heading{
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	color: #39383a;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.inf-date{
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	color: #39383a;
+	font-size: 13px;
+	margin-bottom: 19px;
+}
+.inf-desc{
+	color: #777777;
+	font-family: Roboto;
+	font-size: 10px;
+	line-height: 14.52px
+}
+.block:last-child{
+	border: none;
+}
+.skills{
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+.skill{
+	display: flex;
+	margin-bottom: 30px;
+}
+.type{
+	color: #39383a;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+.level{
+	width: 267px;
+	height: 8px;
+	border: 1px solid #898989;
+	display: flex;
+	align-self: center;
+	margin-left: auto;
+}
+.level-act{
+	height: 100%;
+	background-color: #898989;
+}
+.html{
+	width: 70%;
+}
+.css{
+	width: 80%;
+}
+.ph{
+	width: 60%;
+}
 
 
 
@@ -233,7 +313,7 @@ h1,h2,h3,h4,h5{
 	.about-inf{
 		margin-bottom: 10px;
 	}
-	.about-me{
+	.wrap{
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -268,5 +348,13 @@ h1,h2,h3,h4,h5{
 		display: flex;
 		width: 49%;
 		justify-content: space-around;
+	}
+	.level{
+		width: 167px;
+	}
+}
+@media only screen and (max-width: 380px){
+	.level{
+		width: 120px;
 	}
 }
