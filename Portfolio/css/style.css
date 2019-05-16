@@ -235,7 +235,9 @@ a{
 		justify-content: auto;
 	}
 	.content-block__left{
-		padding-left: 10px;
+		padding-left: 20px;
+		justify-content: center;
+		padding-right: 20px;
 	}
 }
 @media only screen and (max-width: 600px){
@@ -261,13 +263,13 @@ a{
 @media only screen and (max-width: 550px){
 	.content-block{
 		flex-direction: column;
-		height: 500px;
+		height: 550px;
 	}
 	.content-block__left{
 		width: 100%;
 	}
 	.content-block__right{
-		height: 234px;
+		height: 284px;
 		width: 100%;
 		background-position: top;
 	}
