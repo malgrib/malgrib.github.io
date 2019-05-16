@@ -4,7 +4,7 @@ $login = $_POST['login'];
 $password = $_POST['password'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer;
+$mail = new PHPMailer(true);
 $mail->CharSet = 'utf-8';
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
@@ -15,7 +15,7 @@ $mail->SMTPAuth = true;                               // Enable SMTP authenticat
 $mail->Username = 'grindellskanal@mail.ru';                 // Наш логин
 $mail->Password = 'xhfzeS4G';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                    // TCP port to connect to
+$mail->Port = 587;                                    // TCP port to connect to
  
 $mail->setFrom('grindellskanal@mail.ru', 'John Doe');   // От кого письмо 
 $mail->addAddress('culpin2014@yandex.ru');     // Add a recipient
