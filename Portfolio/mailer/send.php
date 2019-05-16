@@ -13,7 +13,7 @@ $mail->SMTPAuth = true;
 $mail->Username = ‘ahmedbabekov’; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
 $mail->Password = ‘12cnekmtd’; // Ваш пароль
 $mail->SMTPSecure = ‘ssl’; 
-$mail->Port = 465;
+$mail->Port = 587;
 $mail->setFrom(‘ahmedbabekov@yandex.ru’); // Ваш Email
 $mail->addAddress(‘culpin2014@mail.ru’); // Email получателя
 
