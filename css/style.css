@@ -139,7 +139,6 @@ ul{
 	display: flex;
 	justify-content: space-between;
 	height: 100%;
-	align-items: center;
 }
 .fact{
 	width: 25%;
@@ -567,7 +566,7 @@ h2{
 		flex-wrap: wrap;
 	}
 	.fact{
-		width: 45%;
+		width: 48%;
 		margin-bottom: 20px;
 		text-align: left;
 	}
@@ -677,5 +676,9 @@ h2{
 	}
 	.heading-line .description{
 		text-align: center;
+	}
+	.fact{
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 }
