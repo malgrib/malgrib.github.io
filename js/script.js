@@ -17,4 +17,8 @@ $(function() {
 		$(".line2").toggleClass("rotate-minus", 300);
 		$(".line3").toggleClass("rotate-hide", 300);
 	});
+	$(".our-works__img-container").hover(function() {
+		$(this).find(".img-overlay").toggleClass("img-overlay__hover");
+		$(this).find(".img-overlay__desc").toggleClass("img-overlay__desc__hover");
+	});
 });

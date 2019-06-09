@@ -9,12 +9,11 @@ body{
 	font-family: "Open Sans", sans-serif;
 }
 .header{
-	min-height: 100vh;
 	background-image: url(../img/bg_top.jpg);
 	background-size: cover;
 	background-position: top center;
 	padding-top: 50px;
-	padding-bottom: 155px;
+	padding-bottom: 100px;
 }
 .container{
 	width: 1140px;
@@ -477,6 +476,80 @@ h2{
 	text-decoration: none;
 	background-color: #ecb124;
 }
+.our-works{
+	background-color: #414e5b;
+	padding-bottom: 60px;
+}
+.our-works__title{
+	font-size: 33px;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+	padding-top: 95px;
+	padding-bottom: 65px;
+}
+.our-works__imgs{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.our-works__img-container{
+	width: 25%;
+	position: relative;
+}
+.our-works__img{
+	width: 100%;
+	height: 100%;
+}
+.img-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(255,255,255, .7);
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition-duration: 1s;
+	color: transparent;
+	transform: scale(1);
+}
+.img-overlay__hover{
+	position: absolute;	
+	background-color: rgba(255,255,255, .7);
+	z-index: 9999;
+	opacity: 1;
+	transition-duration: 1s;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	color: #414e5b;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0.88);
+	top: 0;
+	left: 0;
+}
+.fa-search-plus{
+	font-size: 20px;
+	opacity: .6;
+}
+.img-overlay__desc{
+	font-size: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family: "Exo 2", sans-serif;
+	margin-top: 13px;
+}
+
+
+
+
 
 
 
@@ -536,6 +609,12 @@ h2{
 	.services__title{
 		font-size: 33px;
 	}
+	.our-works__title{
+		font-size: 33px;
+	}
+	.our-works__img-container{
+		width: 33.333333333%;
+	}
 }
 
 @media only screen and (max-width: 992px){
@@ -589,11 +668,20 @@ h2{
 	.gallery-box__picture{
 		background-repeat: no-repeat;
 	}
+	.our-works__img-container{
+		width: 50%;
+	}
+	.our-works__title{
+		font-size: 30px;
+	}
 }
 
 @media only screen and (max-width: 768px){
 	.container{
 		width: 530px;
+	}
+	.header{
+		padding-bottom: 60px;
 	}
 	.heading-line__img{
 		display: none;
@@ -619,6 +707,10 @@ h2{
 	}
 	.service__img{
 		margin-bottom: 20px;
+	}
+	.our-works__img-container{
+		width: 100%;
+		height: 100%;
 	}
 }
 
