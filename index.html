@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>ОВК Строй</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div style="display: none;" class="modal-wrap">
+		<div class="modal-window">
+			<div class="modal-block">
+				<div class="modal-block__close">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="modal-block__title">Отправить заявку</div>
+				<div class="modal-block__desc">
+					Оставьте заявку и мы свяжемся с вами в течение 20 минут
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="nav-line">
+				<div class="logo">
+					<img src="img/logo.svg" alt="ОВК Строй">
+				</div>
+				<div class="burg">
+					<div class="burg__line line3"></div>
+					<div class="burg__line line1"></div>
+					<div class="burg__line line2"></div>
+				</div>
+				<nav class="main-menu">
+					<ul>
+						<li class="active"><a href="#">Главная</a></li>
+						<li><a href="#">Монтаж</a></li>
+						<li><a href="#">Проектирование</a></li>
+						<li><a href="#">Оборудование</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="phone">
+					<div class="phone__number">+7 (495) 99-99-99</div>
+					<div class="phone__desc">
+						<a href="#">Заказать обратный звонок</a>
+					</div>
+				</div>
+			</div>
+			<div style="display: none;" class="hidden-menu">
+				<ul>
+					<li class="active"><a href="#">Монтаж</a></li>
+					<li><a href="#">Проектирование</a></li>
+					<li><a href="#">Оборудование</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="heading-line">
+				<div class="heading-line__desc">
+					<h1 class="title">
+						Монтаж систем вентиляции
+						и кондиционирования
+					</h1>
+					<div class="description">
+						<ul>
+							<li><i class="fas fa-check"></i>Работаем без предоплаты</li>
+							<li><i class="fas fa-check"></i>Скидки до 40%</li>
+							<li><i class="fas fa-check"></i>Бесплатный выезд инженера</li>
+						</ul>
+					</div>
+					<div id="zayavka" class="button">Отправить заявку</div>
+				</div>
+				<div class="heading-line__img">
+					<img src="img/header_img.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="line">
+		<div class="container">
+			<div class="facts">
+				<div class="fact">
+					<div class="fact__heading">
+						<span>6 </span>лет
+					</div>
+					<div class="fact__desc">
+						6 лет успешной работы на рынке промышленной вентиляции
+					</div>
+				</div>
+				<div class="fact">
+					<div class="fact__heading">
+						<span>150 </span>объектов
+					</div>
+					<div class="fact__desc">
+						Более 150 выполненных<br>
+						объектов
+					</div>
+				</div>
+				<div class="fact">
+					<div class="fact__heading">
+						<span>120 </span>партнеров
+					</div>
+					<div class="fact__desc">
+						Более 120 партнеров и<br>
+						поставщиков
+					</div>
+				</div>
+				<div class="fact">
+					<div class="fact__heading">
+						<span>250 000 </span>кв.м.
+					</div>
+					<div class="fact__desc">
+						Установленных<br>
+						воздуховодов
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="gallery">
+		<div class="container">
+			<div class="gallery__left">
+				<div class="gallery-box">
+					<div class="gallery-box__triangle"></div>
+					<i class="far fa-image"></i>
+					<div class="gallery-box__picture">
+						<div class="gallery-box__picture__after">
+							<div class="gallery-box__btn">
+								<i class="btn fas fa-play-circle"></i>
+								<div class="desc">Галерея</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gallery__right">
+				<h2 class="title">
+					Кондиционирование и вентиляция - это наш профиль
+				</h2>
+				<div class="desc">
+					Обращаясь в нашу компанию, вы гарантированно получаете высокое качество проектирования и монтажа вентиляционных систем.  <b>ОВК СТРОЙ</b> - это команда профессионалов с многолетним опытом работы на рынке.
+				</div>
+				<div class="advantages">
+					<div class="advantage">
+						<b>+</b>Работаем без предоплаты
+					</div>
+					<div class="advantage">
+						<b>+</b>Бесплатный выезд инженера
+					</div>
+				</div>
+				<div class="buttons">
+					<div class="button">Сделать заказ</div>
+					<div class="orange-button">Наши сертификаты</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="services">
+		<h2 class="services__title">Основные направления услуг</h2>
+		<div class="container">
+			<div class="service">
+				<div class="service__img">
+					<img src="img/services/1.svg" alt="">
+				</div>
+				<div class="service__name">Монтаж</div>
+				<div class="service__line"></div>
+				<div class="service__desc">
+					Монтаж вентиляции является основным и главным направлением компании ОВК Строй. Наша компания выполняет монтаж вентиляции уже более 6 лет.
+				</div>
+				<div class="centered">
+					<div class="service__btn">
+						Заказать монтаж
+					</div>
+				</div>
+			</div>
+			<div class="service">
+				<div class="service__img">
+					<img src="img/services/2.svg" alt="">
+				</div>
+				<div class="service__name">Проектирование</div>
+				<div class="service__line"></div>
+				<div class="service__desc">
+					Монтаж вентиляции является основным и главным направлением компании ОВК Строй. Наша компания выполняет монтаж вентиляции уже более 6 лет.
+				</div>
+				<div class="centered">
+					<div class="service__btn">
+						Заказать проектирование
+					</div>
+				</div>
+			</div>
+			<div class="service">
+				<div class="service__img">
+					<img src="img/services/3.svg" alt="">
+				</div>
+				<div class="service__name">Оборудование</div>
+				<div class="service__line"></div>
+				<div class="service__desc">
+					Монтаж вентиляции является основным и главным направлением компании ОВК Строй. Наша компания выполняет монтаж вентиляции уже более 6 лет.
+				</div>
+				<div class="centered">
+					<div class="service__btn">
+						Заказать оборудование
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
