@@ -645,8 +645,18 @@ h2{
 	.hidden-menu{
 		margin-top: 60px;
 	}
-}
-@media only screen and (max-width: 340px){
+	.fact{
+		text-align: center;
+	}
+	.fact__heading{
+		font-size: 16px;
+	}
+	.fact__heading span{
+		font-size: 28px;
+	}
+	.fact__desc{
+		font-size: 12.5px;
+	}
 	.heading-line .title{
 		text-align: center;
 		font-size: 30px;
@@ -659,7 +669,13 @@ h2{
 		text-align: center;
 		font-size: 30px;
 	}
-	.fact{
+	.services{
+		margin-top: 50px;
+	}
+	.heading-line .button{
+		margin: 40px auto;
+	}
+	.heading-line .description{
 		text-align: center;
 	}
 }
